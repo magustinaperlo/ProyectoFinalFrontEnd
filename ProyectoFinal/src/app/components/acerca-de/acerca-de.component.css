@@ -16,7 +16,7 @@ div{
         position: absolute;
         width: 15%;
         border-radius: 100%;
-        box-shadow: 3px 3px 3px gray;
+        box-shadow: 5px 5px 5px gray;
         left:2%;
         top: 600px;
 
@@ -27,7 +27,7 @@ div{
         position: absolute;
         width: 30%;
         border-radius: 100%;
-        box-shadow: 3px 3px 3px gray;
+        box-shadow: 5px 5px 5px gray;
         left:33%;
         top: 630px;
         
