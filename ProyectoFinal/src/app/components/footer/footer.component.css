@@ -1,0 +1,11 @@
+.row{
+    background-color: blanchedalmond;
+}
+footer{
+    color:cornflowerblue;
+    font-size: 15px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 2px -3px 7px #999;
+}
