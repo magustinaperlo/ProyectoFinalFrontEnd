@@ -7,11 +7,12 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+
 @Entity
 public class Persona {
     @Id
     @GeneratedValue(strategy =GenerationType.IDENTITY)
-    private Long id;
+    private int id;
     
     @NotNull
     @Size(min=1,max=50,message="longitud incorrecta")
@@ -21,15 +22,27 @@ public class Persona {
     @Size(min=1,max=50,message="longitud incorrecta")
     private String apellido;
      
-    
-    @Size(min=1,max=50,message="longitud incorrecta")
+   @NotNull 
+   private String Descripcion;
+   
     private String img;
 
-    public Long getId() {
+    
+    public Persona() {
+    }
+
+    public Persona(String nombre, String apellido, String Descripcion, String img) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.Descripcion = Descripcion;
+        this.img = img;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -49,6 +62,14 @@ public class Persona {
         this.apellido = apellido;
     }
 
+    public String getDescripcion() {
+        return Descripcion;
+    }
+
+    public void setDescripcion(String Descripcion) {
+        this.Descripcion = Descripcion;
+    }
+
     public String getImg() {
         return img;
     }
@@ -56,6 +77,11 @@ public class Persona {
     public void setImg(String img) {
         this.img = img;
     }
+
+   
+
+   
+    
     
     
     
