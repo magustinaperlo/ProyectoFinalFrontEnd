@@ -16,8 +16,8 @@ export class NewProyectoComponent implements OnInit {
   ngOnInit(): void {
   }
   onCreate():void{
-    const expe = new Proyecto(this.nombreP,this.descripcionP);
-    this.proyecto.save(expe).subscribe(data=> {
+    const proy = new Proyecto(this.nombreP,this.descripcionP);
+    this.proyecto.save(proy).subscribe(data=> {
       alert("Proyecto añadido");
       this.router.navigate(['']);
     },err =>{
