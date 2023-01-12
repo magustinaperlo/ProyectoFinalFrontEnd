@@ -23,7 +23,9 @@ import { interceptorProvider } from './service/interceptor-service';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 import { NeweducacionComponent } from './components/educacion/neweducacion.component';
+import { NewProyectoComponent } from './components/proyecto/new_proyecto.component';
 import { EditeducacionComponent } from './components/educacion/editeducacion.component';
+import { EditProyectoComponent } from './components/proyecto/edit_proyecto.component';
 import { EditSkillComponent } from './components/hys/edit-skill.component';
 import { NewSkillComponent } from './components/hys/new-skill.component';
 import { EditacercadeComponent } from './components/acerca-de/editacercade.component';
@@ -52,7 +54,9 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     EditeducacionComponent,
     EditSkillComponent,
     NewSkillComponent,
-    EditacercadeComponent
+    EditacercadeComponent,
+    EditProyectoComponent,
+    NewProyectoComponent
   ],
   imports: [
     BrowserModule,
