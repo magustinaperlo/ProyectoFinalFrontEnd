@@ -9,5 +9,5 @@ export const environment = {
     messagingSenderId: '511256770643',
   },
   production: true,
-  URL: 'https://maa-portafolio.onrender.com'
+  URL: 'https://maa-portafolio.onrender.com/'
 };
