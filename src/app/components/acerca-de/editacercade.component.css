@@ -1,0 +1,27 @@
+/*estilo foto de perfil*/
+@media(min-width:576px){
+    .fotoDePerfil{
+        width: 20%;
+        border-radius: 150%;
+        box-shadow: 5px 5px 5px gray;
+        left:33%;
+        top: 950px;
+    }
+
+    .descripcion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width:575px){
+    .fotoDePerfil{
+        position: absolute;
+        width: 20%;
+        border-radius: 150%;
+        box-shadow: 5px 5px 5px gray;
+        left:33%;
+        top: 950px;
+
+    }
+}
