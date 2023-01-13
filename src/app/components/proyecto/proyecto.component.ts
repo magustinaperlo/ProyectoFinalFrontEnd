@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Proyecto } from 'src/app/model/proyecto';
 import { ProyectoService } from 'src/app/service/proyecto.service';
 import { TokenService } from 'src/app/service/token.service';
+
 @Component({
   selector: 'app-proyecto',
   templateUrl: './proyecto.component.html',
@@ -9,6 +10,7 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class ProyectoComponent implements OnInit {
   proy: Proyecto[]=[];
+  
   constructor(private proyecto: ProyectoService, private tokenService: TokenService) { }
 
   isLogged =false;
