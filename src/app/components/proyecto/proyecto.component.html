@@ -1,7 +1,7 @@
 <div class="row">
     <h1>Proyectos</h1>
     <div class="col-lg-2">
-        <button type="button" class="btn btn-dark" routerLink="/nuevoproyecto" *ngIf="isLogged">
+        <button type="button" class="btn btn-dark" routerLink="/nuevoproy" *ngIf="isLogged">
             Nuevo Proyecto
         </button> 
     </div>
@@ -9,16 +9,16 @@
     <div class="col-lg-11">
         <table class="table">
             <tbody>
-                <tr *ngFor=" let Proyectos of proy">
-                    <td><h2>{{Proyectos.nombreP}}</h2></td>
-                    <td>{{Proyectos.descripcionP}}</td>
+                <tr *ngFor=" let Proyecto of proy">
+                    <td><h2>{{Proyecto.nombreP}}</h2></td>
+                    <td>{{Proyecto.descripcionP}}</td>
                     <td *ngIf="isLogged">
-                        <button class="btn btn-light"routerLink="/editexp/{{Proyectos.id}}">
+                        <button class="btn btn-light"routerLink="/editproy/{{Proyecto.id}}">
                             <i class="bi bi-pencil"></i> Editar           
                         </button></td>  
 
                     <td *ngIf="isLogged">
-                        <button class="btn btn-danger" (click)="delete(Proyectos.id)">
+                        <button class="btn btn-danger" (click)="delete(Proyecto.id)">
                             <i class="bi bi-trash3"></i> Borrar           
                         </button></td>
                 </tr>
