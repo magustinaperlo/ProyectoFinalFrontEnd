@@ -4,7 +4,7 @@ import { Proyecto } from 'src/app/model/proyecto';
 import { ProyectoService } from 'src/app/service/proyecto.service';
 
 @Component({
-  selector: 'app-edit-proyecto',
+  selector: 'app-edit_proyecto',
   templateUrl: './edit_proyecto.component.html',
   styleUrls: ['./edit_proyecto.component.css']
 })
